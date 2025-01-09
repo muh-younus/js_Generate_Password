@@ -47,20 +47,24 @@
 
             password += upperCase[Math.floor(Math.random() * upperCase.length)];
 
-            console.log(password)
+            console.log("uppercase" ,password)
 
             password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
-            console.log(password)
+            console.log("lowercase",password)
 
             password += digit[Math.floor(Math.random() * digit.length)];
-            console.log(password)
+            console.log("digit" ,password)
 
             password += symbol[Math.floor(Math.random() * symbol.length)];
-            console.log(password)
+            console.log("sumbol",password)
 
             while(length > password.length){
 
+                console.log(length);
+
                 password += allchars[Math.floor(Math.random() * allchars.length)];
+                console.log("char",password)
+                
 
             }
             newPassword.value = password;
