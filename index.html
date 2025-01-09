@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM-PASSWORD-GENERATOR</title>
+
+    <!-- CSS-LINK -->
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- FONT-AWESOME-LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="hero">
+
+            <p>Generate a <br> <span class="inner-text">Random Password</span></p>
+            <hr>
+
+            <input type="text" id="password"> <i class="icon fa-regular fa-copy"></i>
+
+            <button onclick="createPassword()"><i class="fa-solid fa-bolt"></i>Generate Password</button>
+        </div>
+    </div>
+
+
+    <script>
+
+        let newPassword = document.getElementById("password");
+        const length = 15;
+        let upperCase = "QWERTYUIOPLKJHGFDSAZXCVBNM";
+        let lowerCase = "qwertyuioplkjhgfdsazxcvbnm";
+        let digit = "1234567890";
+        const symbol = "@#$%^&*()_+}{}";
+
+        const allchars = upperCase + lowerCase + digit + symbol;
+
+        function createPassword() {
+
+            let password = " ";
+
+            password += upperCase[Math.floor(Math.random() * upperCase.length)];
+
+            console.log(password)
+
+            password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+            console.log(password)
+
+            password += digit[Math.floor(Math.random() * digit.length)];
+            console.log(password)
+
+            password += symbol[Math.floor(Math.random() * symbol.length)];
+            console.log(password)
+
+            while(length > password.length){
+
+                password += allchars[Math.floor(Math.random() * allchars.length)];
+
+            }
+            newPassword.value = password;
+
+            
+
+
+
+
+
+        }
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

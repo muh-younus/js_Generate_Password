@@ -1,0 +1,77 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 20, 49);
+    position: relative;
+}
+
+.container{
+
+    width: 400px;
+    height: 300px;
+    
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+.hero p{
+
+    color: white;
+    font-size: 30px;
+    line-height: 43px;
+}
+
+.inner-text{
+
+    color: seagreen;
+}
+
+.hero hr{
+
+    width: 230px;
+    height: 2px;
+    background-color: seagreen;
+    margin-bottom: 13px;
+    border: none;
+}
+
+.hero input{
+
+    border: none;
+    outline: none;
+    padding: 8px 65px;
+    margin-bottom: 15px;
+}
+
+.hero .icon{
+
+    color: seagreen;
+    position: absolute;
+    right: 114px;
+    top: 110px;
+    
+}
+
+.hero button{
+
+    padding: 8px 20px;
+    background-color: seagreen;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+button i{
+
+    color: white;
+    margin-right: 10px;
+}
